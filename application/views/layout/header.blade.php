@@ -41,7 +41,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="{{ base_url('home') }}">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
                         <span class="caret"></span></a>
@@ -51,6 +51,7 @@
                         <li><a href="{{ base_url('twitter') }}" title="A page that allows a person to enter a twitter URL and view its feed.">Twitter Feed</a></li>
                         <li><a href="{{ base_url('clock') }}" title="A clock that runs in realtime.">Clock</a></li>
                         <li><a href="{{ base_url('flatfile') }}" title="A page that reads and stores data into a text file.">Flat File</a></li>
+                        <li><a href="{{ base_url('paginationsearch') }}" title="A searchable page that includes pagination.">Pagination w/ Search</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
