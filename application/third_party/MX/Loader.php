@@ -286,7 +286,7 @@ class MX_Loader extends CI_Loader
 		return $this;
 	}
 
-	/** Load a module view **/
+	/** Load a module views **/
 	public function view($view, $vars = array(), $return = FALSE)
 	{
 		list($path, $_view) = Modules::find($view, $this->_module, 'views/');

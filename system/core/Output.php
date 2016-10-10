@@ -395,7 +395,7 @@ class CI_Output {
 	 * with any server headers and profile data. It also stops benchmark
 	 * timers so the page rendering speed and memory usage can be shown.
 	 *
-	 * Note: All "view" data is automatically put into $this->final_output
+	 * Note: All "views" data is automatically put into $this->final_output
 	 *	 by controller class.
 	 *
 	 * @uses	CI_Output::$final_output

@@ -162,7 +162,7 @@ class CI_Loader {
 	/**
 	 * Is Loaded
 	 *
-	 * A utility method to test if a class is in the self::$_ci_classes array.
+	 * A utility method to bootstrap if a class is in the self::$_ci_classes array.
 	 *
 	 * @used-by	Mainly used by Form Helper function _get_validation_object().
 	 *
@@ -475,12 +475,12 @@ class CI_Loader {
 	/**
 	 * View Loader
 	 *
-	 * Loads "view" files.
+	 * Loads "views" files.
 	 *
 	 * @param	string	$view	View name
 	 * @param	array	$vars	An associative array of data
-	 *				to be extracted for use in the view
-	 * @param	bool	$return	Whether to return the view output
+	 *				to be extracted for use in the views
+	 * @param	bool	$return	Whether to return the views output
 	 *				or leave it to the Output class
 	 * @return	object|string
 	 */
@@ -509,7 +509,7 @@ class CI_Loader {
 	 * Set Variables
 	 *
 	 * Once variables are set they become available within
-	 * the controller class and its "view" files.
+	 * the controller class and its "views" files.
 	 *
 	 * @param	array|object|string	$vars
 	 *					An associative array or object containing values
@@ -866,7 +866,7 @@ class CI_Loader {
 	 * Used to load views and files.
 	 *
 	 * Variables are prefixed with _ci_ to avoid symbol collision with
-	 * variables made available to view files.
+	 * variables made available to views files.
 	 *
 	 * @used-by	CI_Loader::view()
 	 * @used-by	CI_Loader::file()
@@ -1215,7 +1215,7 @@ class CI_Loader {
 				$found = FALSE;
 				foreach ($config_component->_config_paths as $path)
 				{
-					// We test for both uppercase and lowercase, for servers that
+					// We bootstrap for both uppercase and lowercase, for servers that
 					// are case-sensitive with regard to file names. Load global first,
 					// override with environment next
 					if (file_exists($path.'config/'.strtolower($class).'.php'))

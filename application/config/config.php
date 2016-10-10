@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/cicodetools/';
+$config['base_url'] = 'http://localhost:8888/ci-tools/';
 
 /*
 |--------------------------------------------------------------------------
@@ -451,7 +451,7 @@ $config['csrf_exclude_uris'] = array();
 |--------------------------------------------------------------------------
 |
 | Enables Gzip output compression for faster page loads.  When enabled,
-| the output class will test whether your server supports Gzip.
+| the output class will bootstrap whether your server supports Gzip.
 | Even if it does, however, not all browsers support compression
 | so enable only if you are reasonably sure your visitors can handle it.
 |

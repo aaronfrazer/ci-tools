@@ -676,7 +676,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			}
 			elseif ( ! $this->_has_operator($k))
 			{
-				// value appears not to have been set, assign the test to IS NULL
+				// value appears not to have been set, assign the bootstrap to IS NULL
 				$k .= ' IS NULL';
 			}
 			elseif (preg_match('/\s*(!?=|<>|IS(?:\s+NOT)?)\s*$/i', $k, $match, PREG_OFFSET_CAPTURE))
@@ -2391,9 +2391,9 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 					}
 
 					// $matches = array(
-					//	0 => '(test <= foo)',	/* the whole thing */
+					//	0 => '(bootstrap <= foo)',	/* the whole thing */
 					//	1 => '(',		/* optional */
-					//	2 => 'test',		/* the field name */
+					//	2 => 'bootstrap',		/* the field name */
 					//	3 => ' <= ',		/* $op */
 					//	4 => 'foo',		/* optional, if $op is e.g. 'IS NULL' */
 					//	5 => ')'		/* optional */
