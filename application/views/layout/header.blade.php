@@ -13,7 +13,7 @@
 <link href="{{ base_url('assets/css/simple-sidebar.css') }}" rel="stylesheet">
 
 <!-- Need some way to always grab the latest from jQuery library -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,6 +52,7 @@
                         <li><a href="{{ base_url('clock') }}" title="A clock that runs in realtime.">Clock</a></li>
                         <li><a href="{{ base_url('flatfile') }}" title="A page that reads and stores data into a text file.">Flat File</a></li>
                         <li><a href="{{ base_url('paginationsearch') }}" title="A searchable page that includes pagination.">Pagination w/ Search</a></li>
+                        <li><a href="{{ base_url('dompdf') }}" title="A page that generates a PDF document.">domPDF Generation</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

@@ -78,8 +78,8 @@ class Paginationsearch extends CI_Controller
 		// integrate bootstrap pagination
 		$config['full_tag_open'] = '<ul class="pagination">';
 		$config['full_tag_close'] = '</ul>';
-		$config['first_link'] = false;
-		$config['last_link'] = false;
+		$config['first_link'] = '&lt;&lt; First';
+		$config['last_link'] = 'Last &gt;&gt;';
 		$config['first_tag_open'] = '<li>';
 		$config['first_tag_close'] = '</li>';
 		$config['prev_link'] = 'Prev';
